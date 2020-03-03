@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Templates</title>
+</head>
+<body>
+    <h1>At Portfolio Index page</h1>
+    <ul>
+{% for items in explist %}
+    <li>Name of the Company: {{ items.name_of_company }}</li>
+    <li>{{ items.starting_date }}</li>
+    <li>{{ items.ending_date }}</li>
+    <li>{{ items.is_current_work }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
